@@ -86,7 +86,7 @@ fun ItemDetailsScreen(
     ) { innerPadding ->
         ItemDetailsBody(
             itemUiState = uiState,
-            onSellItem = { },
+            onSellItem = { viewModel.reduceQuantityByOne() },
             onDelete = { },
             modifier = Modifier
                 .padding(
